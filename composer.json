@@ -1,0 +1,19 @@
+{
+    "name": "teelah/gapi",
+    "description": "Simple GApi Library",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Teelah\\Gapi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Edivan Fontes",
+            "email": "edi@email.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
