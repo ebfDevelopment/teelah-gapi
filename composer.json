@@ -3,17 +3,25 @@
     "description": "Simple GApi Library",
     "type": "library",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Teelah\\Gapi\\": "src/"
-        }
-    },
+    "keywords": [
+        "api",
+        "ia",
+        "minering"
+    ],
     "authors": [
         {
             "name": "Edivan Fontes",
-            "email": "edi@email.com"
+            "email": "ebezerrafontes@email.com",
+            "role": "Developer"
         }
     ],
-    "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "php": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Teelah\\Gapi\\": "src/"
+        },
+        "files": []
+    }
 }

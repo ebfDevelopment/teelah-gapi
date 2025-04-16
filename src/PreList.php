@@ -1,6 +1,8 @@
 <?php
     namespace Teelah\Gapi;
 
+    use Teelah\Gapi\Boot\WordListExtractor;
+
     class PreList {
 
         protected array $configs;
@@ -36,7 +38,10 @@
             curl_close($ch);
     
             if ($httpCode == 200) {
-                return $response;
+                $list = explode(",", $response);
+
+                return WordListExtractor::extract($data, $response);
+
             } else {
                 return [
                     'erro' => true,
